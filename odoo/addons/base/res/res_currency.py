@@ -232,7 +232,7 @@ class CurrencyRate(models.Model):
                                  default=lambda self: self.env.user.company_id)
 
     _sql_constraints = [
-        ('unique_name_per_day', 'unique (name,currency_id,company_id)', 'Only one currency rate per day allowed!'),
+        #('unique_name_per_day', 'unique (name,currency_id,company_id)', 'Only one currency rate per day allowed!'),
     ]
 
     @api.model
